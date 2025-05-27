@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="imagenes/icono.ico">
+    <link rel="stylesheet" href="styles/style1.css">
+    <title>PARADICE GYM</title>
+</head>
+<body>
+
+    <nav>
+      <img src="imagenes/logo.png" alt="Logo">
+      <ul>
+            <li><a href="alta.html">Alta</a></li>
+            <li><a href="modificar.html">Modificar</a></li>
+            <li><a href="index.html">Consulta</a></li>
+            <li><a href="baja.html">Baja</a></li>
+
+        </ul>
+    </nav>
+    <hr size="8px" color="black" />
+
+
+<div class="container">
+  <div class="left">
+    <div class="header">
+      <h2 class="animation a1">Ingreso</h2>
+      <h4 class="animation a2">Ingresa el numero de socio para visualizar sus datos</h4>
+    </div>
+    <form action="alta.php" method="post" class="form" enctype="multipart/form-data">
+      <input type="text" name="id" placeholder="Numero de membrecia" class="form-field animation a3" required><br>
+      <input type="text" name="nombre" class="form-field animation a3" placeholder="Nombre" required><br>
+      <input type="file" name="foto" accept="image/*"  required><br>
+      <input type="text" name="duracion"  class="form-field animation a3" placeholder="Duracion" required><br>
+      <label for="inicio"><font color=white"">Fecha de Inicio:</font></label>
+      <input type="date" name="fecha_inicio" class="form-field animation a3" required><br>
+      <label for="fecha_termino"><font color=white"">Fecha de termino:</font></label>
+      <input type="date" name="fecha_termino" class="form-field animation a3" required><br>
+      <input type="text" name="membresia" class="form-field animation a3" placeholder="Nombre del paquete" required><br>
+      <input type="text" name="horario" class="form-field animation a3" placeholder="Horario" required><br>
+      <input type="text" name="servicio" class="form-field animation a3" placeholder="Servicio de regadera" required><br>
+      <input type="text" name="telefono" class="form-field animation a3" placeholder="Telefono" required><br>
+      <input type="text" name="costo" class="form-field animation a3" placeholder="Precio de la membrecia" required><br>
+
+
+
+      <input type="submit" value="Registrar">
+    </form>
+
+
+  </div>
+  <div class="right"></div>
+</div>
+   
+
+</body>
+</html>
