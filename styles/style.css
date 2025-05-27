@@ -1,0 +1,245 @@
+
+* { box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(0, 0, 0);
+
+}
+
+nav {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li {
+  float: right;
+  margin: 40px 10px;
+  margin-left: 1px; /* Ajusta el margen según tu preferencia */
+}
+
+nav img {
+  float: left;
+  margin: 20px 200px; /* Ajusta el margen según tu preferencia */
+  height: 100px; /* Ajusta la altura según tu imagen */
+}
+
+nav a {
+  display: block;
+  color: #00ff00;
+  text-align: center;
+  padding: 14px 16px;
+  margin-right: 100px;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+}
+
+nav a:hover {
+  background-color: #00ff00;
+  color: white;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(to bottom, transparent 0%, #131313 50%, transparent 100%);
+  margin: 0;
+}
+
+
+@media screen and (max-width: 600px) {
+  nav a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+
+  nav ul {
+      float: none;
+  }
+
+  nav img {
+      float: none;
+      margin: 0; /* Ajusta el margen según tu preferencia */
+  }
+}
+
+
+
+
+
+
+* { box-sizing: border-box; }
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap');
+
+
+body {
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 90vh;
+}
+
+.left {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+
+.right {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  transition: 1s;
+  background-image: url('fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+.header > h2 {
+  margin: 0;
+  color: #00ff00;
+}
+
+.header > h4 {
+  margin-top: 10px;
+  font-weight: normal;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.938);
+}
+
+.form {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > p {
+  text-align: right;
+}
+
+.form > p > a {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.form-field {
+  height: 46px;
+  padding: 0 16px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  font-family: 'Rubik', sans-serif;
+  outline: 0;
+  transition: .2s;
+  margin-top: 20px;
+}
+
+.form-field:focus {
+  border-color: #0f7ef1;
+}
+
+.form > button {
+  padding: 12px 10px;
+  border: 0;
+  background: linear-gradient(to right, #00ff00 0%,#7a7a7a 100%); 
+  border-radius: 3px;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.animation {
+  animation-name: move;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+}
+
+.a1 {
+  animation-delay: 2s;
+}
+
+.a2 {
+  animation-delay: 2.1s;
+}
+
+.a3 {
+  animation-delay: 2.2s;
+}
+
+.a4 {
+  animation-delay: 2.3s;
+}
+
+.a5 {
+  animation-delay: 2.4s;
+}
+
+.a6 {
+  animation-delay: 2.5s;
+}
+
+@keyframes move {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-40px);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+@keyframes left {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    padding: 20px 40px;
+    width: 440px;
+  }
+}
+/* Agrega el estilo necesario para el input submit */
+.form > input[type="submit"] {
+  padding: 12px 10px;
+  border: 0;
+  background: linear-gradient(to right, #00ff00 0%,#42fd42 100%);
+  border-radius: 3px;
+  margin-top: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Agrega el estilo para el estado hover del input submit */
+.form > input[type="submit"]:hover {
+  background: linear-gradient(to right, #0097ff 0%, #de48b5 100%);
+}
