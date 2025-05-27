@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="imagenes/icono.ico">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>PARADICE GYM</title>
+</head>
+<body>
+
+    <nav>
+        <img src="imagenes/logo.png" alt="Logo">
+        <ul>
+          <li><a href="alta.html">Alta</a></li>
+          <li><a href="modificar.html">Modificar</a></li>
+          <li><a href="index.html">Consulta</a></li>
+          <li><a href="baja.html">Baja</a></li>
+
+        </ul>
+    </nav>
+    <hr size="8px" color="black" />
+
+
+<div class="container">
+  <div class="left">
+    <div class="header">
+      <h2 class="animation a1">Perdida</h2>
+      <h4 class="animation a2">Ingresa el nombre de socio para recuperar su membrecia</h4>
+    </div>
+    <form action="perdida.php" method="post" class="form">
+      <input type="text" name="nombre" class="form-field animation a3" placeholder="ingresa el nombre de membrecia">
+      <input type="submit" value="Enviar" class="animation a6">
+    </form>
+  </div>
+  <div class="right"></div>
+</div>
+   
+
+<script src="script/script.js"></script>
+</body>
+</html>
